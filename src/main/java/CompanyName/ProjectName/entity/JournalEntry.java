@@ -1,10 +1,26 @@
 package CompanyName.ProjectName.entity;
 
+import java.lang.annotation.Documented;
+import java.util.Date;
+
 //how it show
+@Documented(collection ="journal_entries")
 public class JournalEntry {
-    private long id;
+
+    @Id
+    private ObjectId id;
     private String title;
     private String content;
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    private Date data;
 
     public String getContent() {
         return content;
@@ -22,11 +38,11 @@ public class JournalEntry {
         this.title = title;
     }
 
-    public long getId() {
+    public ObjectId  getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(ObjectId  id) {
         this.id = id;
     }
 }

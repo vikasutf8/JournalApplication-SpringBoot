@@ -43,8 +43,35 @@ class controller with @RestController is bean created
 
 -  [﻿localhost:8080/](http://localhost:8080/) journal/id/2--path variabale
 -  [﻿localhost:8080/](http://localhost:8080/) journal/id?name=vipul --these are request paramters
+- 
+---
    understanding ORM,JPA,spring data JPA
 
 - jpa is a way to achieve ORM,is set of rules , include interface and annotations that you use in your java class, requires a presistence proivder orm tools for implementation,
 - jpa ko use kargo to 3 type ha :: hibernate ,eclipseLink and OpenJPA
 - JPA is designed for Relational database ..by mongodb is schemaless
+---
+Mongodb or best practices;
+
+- controller call services --controller end pointbanayega /routers like and service ko call karge original business logic is present init. like controller at nodejs and entity is models
+  -- more specifically ek Interface banan ha ??/ best practice --package -inteface named respo
+
+
+
+controller --> service --> repository(interface ha to spring automatic runtime me create karga,in-build ) --> in it monogdb find collections/models --moving to entity and write their
+
+
+
+Repository. ::spring data mongo se ek interface provide kiya gaya ha --ye db se query chale ga ?? kase to aapne repository/interface ko extend karna ha inbuild respo
+
+-- now,entity is just model ,we have to map to ORM @Documented
+
+
+
+| expressJs | springBoot |  |
+| ----- | ----- | ----- |
+| .model/Model | entity package |  |
+| .controller/Controller | service package |  |
+| .router/Route | controller package |  |
+| utils/helper/middlware | respository package | it is not exact same lema term |
+| .env | application.property |  |

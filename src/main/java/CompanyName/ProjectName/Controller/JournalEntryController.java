@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/journal")
+@RequestMapping("/_journal")
 public class JournalEntryController {
         //where store
         private Map<Long, JournalEntry> journalEntries  =new HashMap<>();
