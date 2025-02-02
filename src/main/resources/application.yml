@@ -1,0 +1,14 @@
+spring.application.name=movieAPI
+
+spring:
+  datasource:
+    username: root
+    password: Vmpl-Portal@2024
+    url: jdbc:mysql://localhost:3306/movies
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properites:
+      hibernate:
+        format_sql: true
